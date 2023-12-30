@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "851004822751",
+    "firebase_url": "https://food-order-delivery-f2c69-default-rtdb.firebaseio.com",
+    "project_id": "food-order-delivery-f2c69",
+    "storage_bucket": "food-order-delivery-f2c69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851004822751:android:96880f4b124c14c594056a",
+        "android_client_info": {
+          "package_name": "com.aydee.adminwaveoffood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851004822751-t5k0vpmmpogof6cr390sb8k9e2jmbch4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aydee.adminwaveoffood",
+            "certificate_hash": "5aea09c6a2fc879aa9e6e320382ddfa2c1af9801"
+          }
+        },
+        {
+          "client_id": "851004822751-214r8v5r44d0oilmrk88stco6mjuscu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ7fUFL8mK3peVSQy9Z-512EargGmUAxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851004822751-214r8v5r44d0oilmrk88stco6mjuscu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

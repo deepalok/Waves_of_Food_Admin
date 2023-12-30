@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewUserActivity">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="91dp"
+        android:layout_height="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appName"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Create New User Admin"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_white"
+        android:drawableLeft="@drawable/usernew"
+        android:drawablePadding="20dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_white"
+        android:drawableLeft="@drawable/usernew"
+        android:drawablePadding="20dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Email or Phone Number"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_white"
+        android:drawableLeft="@drawable/usernew"
+        android:drawablePadding="20dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreateUser"
+        android:layout_width="170dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_btn"
+        android:text="Create New User"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText7"
+        app:layout_constraintStart_toStartOf="@+id/editTextText7"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText7"
+        app:layout_constraintVertical_bias="0.25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arrow_left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Item"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnBack"
+                app:layout_constraintTop_toTopOf="@+id/btnBack" />
+
+            <EditText
+                android:id="@+id/etFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_white"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="Enter Food Name"
+                android:inputType="text"
+                android:outlineSpotShadowColor="@color/textColor"
+                android:padding="15dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <EditText
+                android:id="@+id/etFoodPrice"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_white"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="Enter Food Price"
+                android:inputType="text"
+                android:outlineSpotShadowColor="@color/textColor"
+                android:padding="15dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/etFoodName"
+                app:layout_constraintStart_toStartOf="@+id/etFoodName"
+                app:layout_constraintTop_toBottomOf="@+id/etFoodName" />
+
+            <TextView
+                android:id="@+id/txtSelectImage"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_white"
+                android:drawableRight="@drawable/pluse_round"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="Select Image"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/etFoodPrice"
+                app:layout_constraintStart_toStartOf="@+id/etFoodPrice"
+                app:layout_constraintTop_toBottomOf="@+id/etFoodPrice" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/txtSelectImage"
+                app:layout_constraintStart_toStartOf="@+id/txtSelectImage"
+                app:layout_constraintTop_toBottomOf="@+id/txtSelectImage">
+
+                <ImageView
+                    android:id="@+id/imgSelectedItemImage"
+                    android:layout_width="175dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/addimage" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_white"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="Short Description"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <EditText
+                android:id="@+id/etFoodDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="Add Food Description"
+                android:inputType="text|textMultiLine"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_white"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="Ingridients"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etFoodDescription" />
+
+            <EditText
+                android:id="@+id/etFoodIngridients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="Add Food Ingridients"
+                android:inputType="text|textMultiLine"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddItem"
+                android:layout_width="157dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn"
+                android:text="Add Item"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/etFoodIngridients"
+                app:layout_constraintStart_toStartOf="@+id/etFoodIngridients"
+                app:layout_constraintTop_toBottomOf="@+id/etFoodIngridients" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

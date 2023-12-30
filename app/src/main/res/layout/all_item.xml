@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgAllItemImage"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/bg_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu4" />
+
+            <TextView
+                android:id="@+id/txtAllItemFoodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Food Name"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/txtAllItemFoodPrice"
+                app:layout_constraintStart_toEndOf="@+id/imgAllItemImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtAllItemFoodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$30"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txtAllItemFoodName"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/txtAllItemFoodName"
+                app:layout_constraintTop_toBottomOf="@+id/txtAllItemFoodName"
+                app:layout_constraintVertical_bias="0.87" />
+
+            <ImageView
+                android:id="@+id/btnMinus"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnPlus"
+                app:layout_constraintEnd_toStartOf="@+id/txtItemQuantity"
+                app:layout_constraintTop_toTopOf="@+id/btnPlus"
+                app:srcCompat="@drawable/icon_minus" />
+
+            <ImageView
+                android:id="@+id/btnPlus"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_plus" />
+
+            <TextView
+                android:id="@+id/txtItemQuantity"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center|center_horizontal"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnPlus"
+                app:layout_constraintEnd_toStartOf="@+id/btnPlus"
+                app:layout_constraintTop_toTopOf="@+id/btnPlus" />
+
+            <ImageView
+                android:id="@+id/btnDelete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btnPlus"
+                app:layout_constraintStart_toStartOf="@+id/btnMinus"
+                app:layout_constraintTop_toBottomOf="@+id/txtItemQuantity"
+                app:srcCompat="@drawable/trash" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
